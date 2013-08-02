@@ -5,7 +5,7 @@
   "keywords": ["reactive", "template", "engine", "data", "bind", "bindings"],
   "main": "lib/index.js",
   "dependencies": {
-    "classes-component": "1.1.1",
+    "classes-component": "git://github.com/shtylman/classes.git#49c5d3ad841448d339a2ff51831277ae77892a6f",
     "event-component": "0.1.0",
     "query-component": "*",
     "props-component": "1.0.3",
@@ -15,6 +15,12 @@
   "devDependencies": {
     "better-assert": "*",
     "mocha": "*"
+  },
+  "browser": {
+    "query": "query-component",
+    "classes": "classes-component",
+    "event": "event-component",
+    "props": "props-component"
   },
   "component": {
     "scripts": {
